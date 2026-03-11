@@ -24,7 +24,8 @@ RETURN p1;
 MATCH
     (p1:Person) -[ir:interacts_with]-> (p2:Person),
     (p2) -[wr:works_for]-> (d:Department)
-WHERE d.name = "Marketing"
+WHERE NOT (p1) -[wr]-> (d) // hier habe ich nachträglich noch einen pattern hinzugefügt, den wir gestern vergessen haben
+AND d.name = "Marketing"
 RETURN p1;
 
 
