@@ -35,8 +35,6 @@ db.getCollection("person").insertMany(
                 }
             ]
         },
-
-        // Carina: Hobbies: Kochen, Essen, Fechten.
         {
             name: "Carina",
             age: NumberInt(36),
@@ -66,17 +64,53 @@ db.getCollection("person").insertMany(
                 "Fechten"
             ]
         },
-
-        // Ingo: Lehrer in Wien; 51 Jahre alt; Hobbies: Skifahren, Laufen, Lesen; Wohnhaft in Wienerneustadt; Single seit 3 Monaten; Geburtstag am 31.12.; Spitzname ist Bingo.
         {
-
+            name: "Ingo",
+            age: 51,
+            birthdate: ISODate("1968-12-31T00:00:00.000Z"),
+            nickname: "Bingo",
+            location: "Wienerneustadt",
+            single_since: NumberDecimal(0.25),
+            jobs: [
+                {
+                    "job": "Lehrer",
+                    "job_location": "Wien"
+                },
+                {
+                    "job": "Lehrer",
+                    "job_location": "St. Pölten"
+                }
+            ],
+            "hobbies": [
+                "Skifahren",
+                "Laufen",
+                "Lesen"
+            ]
         },
-
-        // Werner: Dr. med. an der Universität Wien, Realgymnasium am Schillerplatz in Wien; Hobbies: Lesen, Modelleisenbahnen; Single seit 4 Jahren; Geburtstag am 27.11.; 57 Jahre alt; Wohnhaft in 1110 Wien; Sucht männliche Kontakte.
         {
-
+            name: "Werner",
+            age: 57,
+            birthdate: ISODate("1962-11-27T00:00:00.000Z"),
+            location: "Wien",
+            zip: "1110",
+            single_since: NumberInt(4),
+            search_for: ["m"],
+            education: [
+                {
+                    name: "Universität Wien",
+                    degree: "Dr. med.",
+                    location: "Wien"
+                },
+                {
+                    name: "Realgymnasium am Schillerplatz",
+                    degree: "Matura",
+                    location: "Wien"
+                }
+            ],
+            hobbies: [
+                "Lesen",
+                "Modelleisenbahnen"
+            ]
         }
-
     ]
-
 )
