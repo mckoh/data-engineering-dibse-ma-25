@@ -1,0 +1,27 @@
+
+
+// Es sollen alle Datensätze in der DB ausgegeben werden.
+
+
+// Es soll der Datensatz über Werner ausgegeben werden.
+
+
+// Es sollen alle Personen ausgegeben werden, die schon länger als 2 Jahren Single sind.
+
+
+// Es sollen die Hobbies von Werner ausgegeben werden.
+
+
+// Es soll die Anzahl der Hobbies von Werner ausgegeben werden.
+
+
+// Es sollen alle Datensätze ausgegeben werden, in denen das Attribut Geburtsdatum gesetzt wurde.
+
+
+// Es soll das Durchschnittsalter aller Personen ermittelt werden.
+
+
+// Es soll die Anzahl der Nennungen jedes Hobbies ermittelt werden.
+
+
+// Es soll Maximale Anzahl an Berufsverhältnissen ermittelt werden.
