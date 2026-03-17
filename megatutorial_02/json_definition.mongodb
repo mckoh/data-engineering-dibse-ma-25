@@ -2,9 +2,7 @@
 use("dating_app");
 
 db.getCollection("person").insertMany(
-
     [
-        // Absolvent einer Weinbau HTL in Eisenstadt;
         {
             name: "Peter",
             age: NumberInt(43),
