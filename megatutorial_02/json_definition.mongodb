@@ -1,12 +1,82 @@
 
+use("dating_app");
 
-// Peter: Weinhändler in Wörgl; 43 Jahre alt; Absolvent einer Weinbau HTL in Eisenstadt; Wohnhaft in 6330 Kufstein, Single seit 2 Jahren; Hobbies: Lesen, Radfahren, Schwimmen, Joga; Sucht weibliche Kontakte
+db.getCollection("person").insertMany(
 
+    [
+        // Absolvent einer Weinbau HTL in Eisenstadt;
+        {
+            name: "Peter",
+            age: NumberInt(43),
+            location: "Kufstein",
+            zip: "6330",
+            single_since: NumberInt(2),
+            searches_for: [
+                "f"
+            ],
+            hobbies: [
+                "Lesen",
+                "Radfahren",
+                "Schwimmen",
+                "Joga"
+            ],
+            jobs: [
+                {
+                    job: "Weinhändler",
+                    location: "Wörgl",
+                    zip: "6300"
+                }
+            ],
+            educations: [
+                {
+                    name: "HTL für Weinbau",
+                    location: "Eisenstadt",
+                    zip: "7000"
+                }
+            ]
+        },
 
-// Carina: Ernährungsberaterin in Leoben; 36 Jahre alt; Bachelor of Science für Dieätologie der FH Gesundheit in Innsbruck; Matura an der HLW Kufstein; Hobbies: Kochen, Essen, Fechten.
+        // Carina: Hobbies: Kochen, Essen, Fechten.
+        {
+            name: "Carina",
+            age: NumberInt(36),
+            educations: [
+                {
+                    name: "FH Gesundheit",
+                    degree: "BSc",
+                    location: "Innsbruck",
+                    zip: "6020"
+                },
+                {
+                    name: "HLW Kufstein",
+                    degree: "Matura",
+                    location: "Kufstein",
+                    zip: "6330"
+                }
+            ],
+            jobs: [
+                {
+                    job: "Ernährungsberaterin",
+                    location: "Leoben"
+                }
+            ],
+            hobbies: [
+                "Kochen",
+                "Essen",
+                "Fechten"
+            ]
+        },
 
+        // Ingo: Lehrer in Wien; 51 Jahre alt; Hobbies: Skifahren, Laufen, Lesen; Wohnhaft in Wienerneustadt; Single seit 3 Monaten; Geburtstag am 31.12.; Spitzname ist Bingo.
+        {
 
-// Ingo: Lehrer in Wien; 51 Jahre alt; Hobbies: Skifahren, Laufen, Lesen; Wohnhaft in Wienerneustadt; Single seit 3 Monaten; Geburtstag am 31.12.; Spitzname ist Bingo.
+        },
 
+        // Werner: Dr. med. an der Universität Wien, Realgymnasium am Schillerplatz in Wien; Hobbies: Lesen, Modelleisenbahnen; Single seit 4 Jahren; Geburtstag am 27.11.; 57 Jahre alt; Wohnhaft in 1110 Wien; Sucht männliche Kontakte.
+        {
 
-// Werner: Dr. med. an der Universität Wien, Realgymnasium am Schillerplatz in Wien; Hobbies: Lesen, Modelleisenbahnen; Single seit 4 Jahren; Geburtstag am 27.11.; 57 Jahre alt; Wohnhaft in 1110 Wien; Sucht männliche Kontakte.
+        }
+
+    ]
+
+)
